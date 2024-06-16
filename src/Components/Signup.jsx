@@ -8,9 +8,9 @@ function Signup(props) {
     const navigate = useNavigate()
 
    //validate passwords
-    const[isUserNameValid,setUserNameValid] = useState(true)
-    const[isPasswordValid,setPasswordValid] = useState(true)
-    const[passwordMatch,setPasswordMatch] = useState(true)
+    const[isUserNameValid,setUserNameValid] = useState(false)
+    const[isPasswordValid,setPasswordValid] = useState(false)
+    const[passwordMatch,setPasswordMatch] = useState(false)
 
     const { users, setUsers } = props
 
