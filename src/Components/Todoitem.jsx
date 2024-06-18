@@ -1,16 +1,16 @@
 function TodoItem(props) {
-    let {id,activity,activityArr,setActivityArr} = props
-    
-    const remove = ((removeid)=>{
+    let { id, activity, activityArr, setActivityArr } = props
+
+    const remove = ((removeid) => {
         console.log("removed")
-        var temarray = activityArr.filter((item)=> item.id !== removeid)
+        var temarray = activityArr.filter((item) => item.id !== removeid)
         setActivityArr(temarray)
     })
 
     return (
         <div>
-            <div className="flex justify-between">
-                <li>{id}. {activity} </li>
+            <div className="flex justify-between items-center w-full ">
+                <li className="flex-1 break-words">{id}. {activity}</li>
                 <button onClick={(() => { remove(id) })} className="pr-3 text-red-600">Delete</button>
             </div>
         </div>

@@ -34,10 +34,10 @@ function Activities() {
                 </div>
 
             </div>
-            <div className="bg-[#eeabab] p-2  border rounded flex-grow">
+            <div className="bg-[#eeabab] p-2  border rounded flex-grow w-full">
                 <h1 className="font-medium text-2xl">Today's Activity</h1>
                 <div className=" text-blue-900 font-bold  ">
-                    {activityArr.length === 0 ? <p>You haven't added anything yet</p> : <p>Here is your Activities</p>}
+                    {activityArr.length === 0 ? <p>You haven't added anything yet  </p> : <p>Here is your Activities</p>}
                 </div>
                 <ul>
                     {

@@ -26,7 +26,7 @@ function Login(props){
 
     function checkUser(){
         var userFound = false
-        console.log(users)
+        
 
         users.forEach( function(item) {
             if (item.username === enteredUName && item.password === enteredpassword) {
