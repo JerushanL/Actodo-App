@@ -29,8 +29,8 @@ function Activities() {
             <div className="flex flex-col gap-2">
                 <h1 className="font-medium text-2xl">Manage Activities</h1>
                 <div>
-                    <input type="text" value={newItem} placeholder="Next activity?" className="p-2  border rounded-none border-gray-400 outline-none w-[190px] " onChange={handleChange} onKeyDown={add} /> 
-                    <button className="bg-black text-white p-2 border rounded-none border-black ml-1 " onClick={add}>Add</button>
+                    <input type="text" value={newItem} placeholder="Next activity?" className="p-2  border rounded-none border-gray-400 outline-none " onChange={handleChange} onKeyDown={add} /> 
+                    <button className="bg-black text-white p-2 border rounded-none border-black ml-2 px-4" onClick={add}>Add</button>
                 </div>
 
             </div>

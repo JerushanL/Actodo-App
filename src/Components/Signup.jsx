@@ -80,6 +80,7 @@ function Signup(props) {
         
         console.log("Sign in successful")
         setUsers([...users, { username: signName, password: createPassword }]);
+        alert("Account Created Successfully")
         console.log(users)
         navigate('/')
 
